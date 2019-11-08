@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="/css/aos.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+ <body >
+
+        <div class="site-section bg-light">
+                <div class="container">
+                    <div class="row mb-5 justify-content-center">
+                        <div class="col-md-6 text-center">
+                            
+                            <h2 class="section-title mb-3"><%= productdetails.name  %> </h2>
+                                
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 mb-4">
+                        <div class="row mx-4 my-4 product-item-2 align-items-start">
+                            <div class="col-md-6 mb-5 mb-md-0">
+                                <img src="../images/thriftnepaaal.jpg" alt="Image" class="img-fluid">
+                            </div>
+            
+                            <div class="col-md-5 ml-auto product-title-wrap">
+                                <!-- <span class="number">01.</span> -->
+                                <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
+                                <p class="mb-4"><%= productdetails.description  %>  </p>
+
+                                <div class="mb-4">
+                                        <h3 class="text-black font-weight-bold h5">Condition:</h3>
+                                        <div class="condition"><%= productdetails.condition %> </div>
+                                    </div>
+                                    
+            
+                                <div class="mb-4">
+                                    <h3 class="text-black font-weight-bold h5">Price:</h3>
+                                    <div class="price"><%= productdetails.price  %> </div>
+                                </div>
+                                <p>
+                                    
+                                    <a href='/confirmation/<%= productdetails.id%>' class="btn btn-black rounded-0 d-block d-lg-inline-block"> Buy</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+    
+
+
+
+        <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery.stellar.min.js"></script>
+  <script src="/js/jquery.countdown.min.js"></script>
+  <script src="/js/bootstrap-datepicker.min.js"></script>
+  <script src="/js/jquery.easing.1.3.js"></script>
+  <script src="/js/aos.js"></script>
+  <script src="/js/jquery.fancybox.min.js"></script>
+  <script src="/js/jquery.sticky.js"></script>
+
+  
+  <script src="js/main.js"></script>
+
+  
+    
+</body>
+</html>

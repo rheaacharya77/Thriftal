@@ -1,0 +1,45 @@
+#movie {
+    display: grid;
+    margin: 30px auto;
+    width: 30%;
+}
+
+input {
+    margin: 10px;
+    height: 40px;
+}
+
+textarea {
+    margin: 10px;
+    height: 160px;
+}
+
+textarea {
+    margin: 10px;
+    height: 160px;
+}
+input[type=button] {
+    background: #06a50e;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    border: 0px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input[type=button]:hover {
+    background: #a6b10d;
+}
+@media(max-width: 900px) {
+    form {
+        width: 70%;
+    }
+}
+
+@media(max-width: 550px) {
+    form {
+        width: 90%;
+    }
+}
