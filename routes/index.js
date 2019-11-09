@@ -2,7 +2,8 @@
 var express = require('express');
 var router = express.Router();
 var productdetails= require('../models/productdetails');
-
+var multer =require('multer');
+var upload =multer({dest:'uploads/'})
 
  router.get('/index', function(req, res, next) {
   productdetails.find().exec(function(err,productdetails){
@@ -14,6 +15,23 @@ var productdetails= require('../models/productdetails');
 router.get('/adddetails',function(req,res,next){
   res.render('adddetails')
 })
+router.get('/image', function (res, res, next) {
+  res.render('image');
+});
+
+router.post('/image', upload.any(), function (req, res, next) {
+  console.log("hcsaj", req.files)
+  res.send('req.files ', { productdetails });
+});
+
+
+router.get('/viewdetails/:_id', function (res, res, next) {
+
+  productdetails.findOne({ _id: req.param._id }), function (err, productdetails) {
+    res.render('viewdetails', { productDetails });
+
+  }
+});
 
 
 
