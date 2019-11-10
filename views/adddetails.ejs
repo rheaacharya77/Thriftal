@@ -47,7 +47,7 @@
   
   
   
-                  <form method="post" action='/adddetails' class="p-5 bg-white">
+                  <form method="post" action='/adddetails' class="p-5 bg-white"  enctype="multipart/form-data">
   
                       <!-- <h2 class="h4 text-black mb-5">Sell your clothes</h2> -->
   
@@ -83,6 +83,17 @@
                           </div>
                       </div>
                       
+
+                      <div class="row form-group">
+                      
+                        <div class="col-md-12">
+                            <label class="text-black" for="condition">image</label>
+                            <input type="file" id="file" class="form-control rounded-0" name="image">
+                        </div>
+                    </div>
+                    
+
+
                       <div class="row form-group">
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-black rounded-0 py-3 px-4">Add </button>

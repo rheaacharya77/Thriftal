@@ -5,6 +5,7 @@ const productdetailsSchema = mongoose.Schema({
     condition:String,
     description: String,
     image:String,
+    
     CreatedData: {
         type:Date,
         default:Date.now
