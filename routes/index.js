@@ -2,8 +2,22 @@
 var express = require('express');
 var router = express.Router();
 var productdetails= require('../models/productdetails');
-var multer =require('multer');
-var upload =multer({dest:'uploads/'})
+
+var multer=require('multer');
+const path= require('path');
+var storage=multer.diskStorage({
+destination: './public/uploads/',
+filename: function(req,file,cb){
+  cb(null,file.fieldname+'_'+ Date.now()+path.extname(file.originalname));
+}
+});
+
+
+var upload =multer({
+  storage: storage
+  
+}).single('image') ;
+
 
  router.get('/index', function(req, res, next) {
   productdetails.find().exec(function(err,productdetails){
@@ -15,14 +29,6 @@ var upload =multer({dest:'uploads/'})
 router.get('/adddetails',function(req,res,next){
   res.render('adddetails')
 })
-router.get('/image', function (res, res, next) {
-  res.render('image');
-});
-
-router.post('/image', upload.any(), function (req, res, next) {
-  console.log("hcsaj", req.files)
-  res.send('req.files ', { productdetails });
-});
 
 
 router.get('/viewdetails/:_id', function (res, res, next) {
@@ -36,13 +42,15 @@ router.get('/viewdetails/:_id', function (res, res, next) {
 
 
 
-router.post('/adddetails', function(req, res, next) {
-  console.log(req.body)
+router.post('/adddetails',upload, function(req, res, next) {
+  console.log(req.file)
   var productdetail = new productdetails({
   name: req.body.name,
   price: req.body.price,
   condition: req.body.condition,
   description: req.body.description,
+  image: req.file.filename,
+  
 })
 
 var promise = productdetail.save()
