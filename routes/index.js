@@ -2,6 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var productdetails= require('../models/productdetails');
+
 var multer=require('multer');
 const path= require('path');
 var storage=multer.diskStorage({
@@ -17,6 +18,7 @@ var upload =multer({
   
 }).single('image') ;
 
+
  router.get('/index', function(req, res, next) {
   productdetails.find().exec(function(err,productdetails){
     console.log('....data',productdetails)
@@ -27,6 +29,15 @@ var upload =multer({
 router.get('/adddetails',function(req,res,next){
   res.render('adddetails')
 })
+
+
+router.get('/viewdetails/:_id', function (res, res, next) {
+
+  productdetails.findOne({ _id: req.param._id }), function (err, productdetails) {
+    res.render('viewdetails', { productDetails });
+
+  }
+});
 
 
 
