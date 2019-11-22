@@ -47,20 +47,20 @@
   
   
   
-                  <form method="post" action='/adddetails' class="p-5 bg-white"  enctype="multipart/form-data">
+                  <form method="post" action='/checkout' class="p-5 bg-white" >
   
                       <!-- <h2 class="h4 text-black mb-5">Sell your clothes</h2> -->
   
                       <div class="row form-group">
                           <div class="col-md-6 mb-3 mb-md-0">
-                              <label class="text-black" for="name">name</label>
+                              <label class="text-black" for="name">Name</label>
                               <input type="text" id="name" class="form-control rounded-0" name="name">
                           </div>
                           </div>
                           <div class="row form-group">
                            <div class="col-md-6">
-                              <label class="text-black" for="price">price</label>
-                              <input type="number" id="price" class="form-control rounded-0" name="price">
+                              <label class="text-black" for="email">Email</label>
+                              <input type="email" id="email" class="form-control rounded-0" name="email">
                           </div>
                       </div>
   
@@ -69,8 +69,8 @@
                       <div class="row form-group">
   
                           <div class="col-md-12">
-                              <label class="text-black" for="description">description</label>
-                              <input type="text" id="description" class="form-control rounded-0" name="description">
+                              <label class="text-black" for="phone">Phone</label>
+                              <input type="text" id="phone" class="form-control rounded-0" name="phone">
                           </div>
                       </div>
 
@@ -78,20 +78,14 @@
                       <div class="row form-group">
                       
                           <div class="col-md-12">
-                              <label class="text-black" for="condition">Condition</label>
-                              <input type="text" id="condition" class="form-control rounded-0" name="condition">
+                              <label class="text-black" for="address">Address</label>
+                              <input type="text" id="address" class="form-control rounded-0" name="address">
                           </div>
                       </div>
 
                       
 
-                      <div class="row form-group">
-                      
-                        <div class="col-md-12">
-                            <label class="text-black" for="condition">image</label>
-                            <input type="file" id="file" class="form-control rounded-0" name="image">
-                        </div>
-                    </div>
+                     
                     
 
 
@@ -99,7 +93,8 @@
                     <div class="row form-group">
 
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-black rounded-0 py-3 px-4">Add </button>
+                            <!-- <button type="submit" class="btn btn-black rounded-0 py-3 px-4">Checkout </button> -->
+                            <a href='/index' class="btn btn-black rounded-0 d-block d-lg-inline-block"> Checkout</a>
                         </div>
                     
 

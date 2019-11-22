@@ -33,36 +33,35 @@
                     <div class="row mb-5 justify-content-center">
                         <div class="col-md-6 text-center">
                             
-                            <h2 class="section-title mb-3"><%= productdetails.name  %> </h2>
+                            <h2 class="section-title mb-3"><%= rentdetails.name  %> </h2>
                                 
                         </div>
                     </div>
                     <div class="bg-white py-4 mb-4">
                         <div class="row mx-4 my-4 product-item-2 align-items-start">
                             <div class="col-md-6 mb-5 mb-md-0">
-                                <img src="../uploads/<%= productdetails.image %>" alt="Image" class="img-fluid">
+                                <img src="../uploads/<%= rentdetails.image %>" alt="Image" class="img-fluid">
                             </div>
             
                             <div class="col-md-5 ml-auto product-title-wrap">
                                 <!-- <span class="number">01.</span> -->
                                 <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
-                                <p class="mb-4"><%= productdetails.description  %>  </p>
+                                <p class="mb-4"><%= rentdetails.description  %>  </p>
 
                                 <div class="mb-4">
                                         <h3 class="text-black font-weight-bold h5">Condition:</h3>
-                                        <div class="condition"><%= productdetails.condition %> </div>
+                                        <div class="condition"><%= rentdetails.condition %> </div>
                                     </div>
                                     
             
                                 <div class="mb-4">
                                     <h3 class="text-black font-weight-bold h5">Price:</h3>
-                                    <div class="price"><%= productdetails.price  %> </div>
+                                    <div class="price"><%= rentdetails.price  %> </div>
                                 </div>
                                 <p>
                                     
-                                    <a href='/cart1/<%= productdetails._id %>' class="btn btn-black rounded-0 d-block d-lg-inline-block"> Add to cart</a>
-                                    
-                                 </p>
+                                    <a href='/cart/<%= rentdetails.id%>' class="btn btn-black rounded-0 d-block d-lg-inline-block"> Add to cart</a>
+                                </p>
                             </div>
                         </div>
                     </div>
