@@ -45,6 +45,7 @@ router.post('/adddetails',upload, function(req, res, next) {
   var productdetail = new productdetails({
   name: req.body.name,
   price: req.body.price,
+  size: req.body.size,
   condition: req.body.condition,
   description: req.body.description,
   image: req.file.filename,
@@ -61,7 +62,7 @@ promise.then((productdetails) => {
 });
 
 
-router.get('/viewdetails/:_id',function(req, res, next)
+router.get('/viewdetails/:_id',ensureAuthenticated,function(req, res, next)
 {
   productdetails.findOne({_id: req.params._id},function(err,productdetails){
      console.log('product selected.....',productdetails)
@@ -73,14 +74,14 @@ router.get('/viewdetails/:_id',function(req, res, next)
  router.get('/confirmation',function(req, res, next){
    res.render('confirmation')
  })
- router.get('/confirmation/:id', function(req, res, next) {
-    productdetails.findOne({_id:req.params.id}, function(err,productdetails){
+ router.get('/confirmation/:_id', function(req, res, next) {
+    productdetails.findOne({_id:req.params._id}, function(err,productdetails){
       console.log('selected....',productdetails)
       res.render('confirmation',{productdetails})
   })
  })
 
-router.get('/cart',function(req, res, next){
+router.get('/cart',ensureAuthenticated,function(req, res, next){
   res.render('rentcart')
 })
 router.get('/cart/:id', function(req, res, next) {
@@ -90,7 +91,7 @@ router.get('/cart/:id', function(req, res, next) {
  })
  })
 
- router.get('/cart1',function(req, res, next){
+ router.get('/cart1',ensureAuthenticated,function(req, res, next){
   res.render('cart')
 })
 router.get('/cart1/:id', function(req, res, next) {
@@ -148,7 +149,7 @@ router.get('/editdelete',function(req, res, next){
     })
   })
 
-  router.get('/rentproducts', function(req, res, next) {
+  router.get('/rentproducts',ensureAuthenticated, function(req, res, next) {
     rentdetails.find().exec(function(err,rentdetails){
       console.log('....data',rentdetails)
      res.render('rentproducts',{rentdetails})
@@ -156,7 +157,7 @@ router.get('/editdelete',function(req, res, next){
   });   
 
   
-router.get('/rentdetails',function(req, res, next){
+router.get('/rentdetails',ensureAuthenticated,function(req, res, next){
   res.render('rentdetails')
 })
 
