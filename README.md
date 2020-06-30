@@ -34,6 +34,8 @@ Go to the folder (through terminal)
 `npm start or nodemon`
 
 ## Some images:
+Home Page:
+![HomePage](https://github.com/rheaacharya77/Thriftal/blob/master/pic1.PNG)
 
 
 ## Built With
