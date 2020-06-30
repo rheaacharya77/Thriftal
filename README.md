@@ -37,6 +37,10 @@ Go to the folder (through terminal)
 Home Page:
 ![HomePage](https://github.com/rheaacharya77/Thriftal/blob/master/pic1.PNG)
 
+![homepage](https://github.com/rheaacharya77/Thriftal/blob/master/pic2.PNG)
+
+![homepage](https://github.com/rheaacharya77/Thriftal/blob/master/pic4.PNG)
+
 
 ## Built With
 * [NodeJS](https://nodejs.org/en/download/) - Runtime Environment
