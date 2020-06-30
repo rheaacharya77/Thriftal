@@ -48,6 +48,7 @@ router.post('/adddetails', upload, function (req, res, next) {
     price: req.body.price,
     condition: req.body.condition,
     description: req.body.description,
+    size: req.body.size,
     image: req.file.filename,
 
   })
