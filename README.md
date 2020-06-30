@@ -34,12 +34,33 @@ Go to the folder (through terminal)
 `npm start or nodemon`
 
 ## Some images:
-Home Page:
+
+* Home Page:
 ![HomePage](https://github.com/rheaacharya77/Thriftal/blob/master/pic1.PNG)
 
 ![homepage](https://github.com/rheaacharya77/Thriftal/blob/master/pic2.PNG)
 
 ![homepage](https://github.com/rheaacharya77/Thriftal/blob/master/pic4.PNG)
+
+* Login/Register:
+
+![login/register](https://github.com/rheaacharya77/Thriftal/blob/master/pic5.PNG)
+
+* Buy:
+
+![buy](https://github.com/rheaacharya77/Thriftal/blob/master/pic7.PNG)
+
+![buy](https://github.com/rheaacharya77/Thriftal/blob/master/pic8.PNG)
+
+* Sell:
+
+![sell](https://github.com/rheaacharya77/Thriftal/blob/master/pic6.PNG)
+
+* Rent:
+
+![rent](https://github.com/rheaacharya77/Thriftal/blob/master/pic9.PNG)
+
+![rent](https://github.com/rheaacharya77/Thriftal/blob/master/pic10.PNG)
 
 
 ## Built With
