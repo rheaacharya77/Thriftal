@@ -41,4 +41,5 @@ Go to the folder (through terminal)
 * [Riya Acharya](https://github.com/rheaacharya77) 
 * [Upasana Pradhan](https://github.com/upasanapradhan)
 * [Prakriti Adhikari](https://github.com/prakriti75)
-See also the list of [contributors]() who participated in this project.
+
+See also the list of [contributors](https://github.com/rheaacharya77/Thriftal/graphs/contributors) who participated in this project.
