@@ -17,11 +17,13 @@ What things you need to install the requirements and how to install them
 ### ExpressJS
 
 `npm install -g express-generator`
+
 `express --view = ejs Projectname`
 
 ### MongoDB
 
 `npm install mongoose --save`
+
 `npm install nodemon --save`
 
 Run
@@ -30,6 +32,7 @@ To run the web application:
 Go to the folder (through terminal)
 
 `npm start or nodemon`
+
 ## Some images:
 
 ## Built With
