@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 *.css linguist-detectable=false
 *.js linguist-detectable=true
 *.html linguist-detectable=false
+=======
+
+
+static/* linguist-vendored
+*.html linguist-language=JavaScript
+>>>>>>> 9a01dafc795062236c16ecac0901aced0bbb6a46
