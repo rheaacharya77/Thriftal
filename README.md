@@ -38,8 +38,8 @@ Go to the folder (through terminal)
 * [MongoDB](https://docs.mongodb.com/) - Database
 
 ## Authors
-* [Riya Acharya](https://github.com/rheaacharya77) 
-* [Upasana Pradhan](https://github.com/upasanapradhan)
-* [Prakriti Adhikari](https://github.com/prakriti75)
+* Riya Acharya -[rheaacharya77](https://github.com/rheaacharya77) 
+* Upasana Pradhan -[upasanapradhan](https://github.com/upasanapradhan)
+* Prakriti Adhikari -[prakriti75](https://github.com/prakriti75)
 
 See also the list of [contributors](https://github.com/rheaacharya77/Thriftal/graphs/contributors) who participated in this project.
