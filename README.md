@@ -34,6 +34,7 @@ Go to the folder (through terminal)
 `npm start or nodemon`
 
 ## Some images:
+![LCO Mascot](hero_2.jpg)
 
 ## Built With
 * [NodeJS](https://nodejs.org/en/download/) - Runtime Environment
