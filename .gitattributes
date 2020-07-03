@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 
 
 static/* linguist-vendored
 *.html linguist-language=JavaScript
+=======
+
+static/* linguist-vendored
+*.html linguist-language=JavaScript
+
+>>>>>>> c1d7e4d4f8ada568af352c75888b5206d0356188
